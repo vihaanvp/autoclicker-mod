@@ -59,6 +59,19 @@ This project is licensed under the GNU General Public License v3.0 - see the [LI
 
 ---
 
+## 📚 Documentation
+
+| Document | Description |
+|----------|-------------|
+| [USAGE.md](USAGE.md) | Complete end-user guide with farm setups |
+| [CONFIGURATION.md](CONFIGURATION.md) | All configuration options reference |
+| [BUILD.md](BUILD.md) | Build instructions for all Minecraft versions |
+| [DEVELOPER.md](DEVELOPER.md) | Technical architecture & development guide |
+| [CONTRIBUTING.md](CONTRIBUTING.md) | Contribution guidelines |
+| [CHANGELOG.md](CHANGELOG.md) | Version history |
+
+---
+
 ## **Changelog**
 
 ### **v1.5.4** (2026-11-07)
@@ -76,3 +89,5 @@ This project is licensed under the GNU General Public License v3.0 - see the [LI
 - Added auto-disable timeout feature
 - Improved audio management with persistent mute state
 - Refactored codebase for better maintainability
+
+[See full changelog →](CHANGELOG.md)
