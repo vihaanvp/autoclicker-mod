@@ -4,7 +4,7 @@
 
 A lightweight, event-driven automation tool designed for early- to mid-game technical farms—such as experience farms, semi-automatic Piglin bartering setups, mob grinders, and tree farms. Supports automatic attacking, planting, bone meal acceleration, and intelligent audio control.
 
-Fully compatible with **Minecraft 1.20 through 26.2**, featuring a refactored codebase for improved stability and maintainability.
+Fully compatible with **Minecraft 1.20 through 26.3**, featuring a refactored codebase for improved stability and maintainability.
 
 ## **Key Controls (Default Keybinds)**
 
@@ -56,3 +56,23 @@ While this mod includes anti-detection features (e.g., randomized timing), it re
 ## **License**
 
 This project is licensed under the GNU General Public License v3.0 - see the [LICENSE](LICENSE) file for details.
+
+---
+
+## **Changelog**
+
+### **v1.5.4** (2026-11-07)
+- **Added support for Minecraft 26.3** (Fabric API 0.164.0+26.3, Fabric Loader 0.19.5+)
+- Updated Gradle wrapper to 9.7.1 and Fabric Loom to 1.18-SNAPSHOT for 26.3 compatibility
+- Updated Mod Menu dependency to 21.0.0 for 26.3
+- Fixed breaking API changes in 26.3:
+  - `InputConstants.Type.KEYSYM` → `InputConstants.Type.KEYBOARD` for key bindings
+  - `player.swing(hand, true)` → `player.swing(hand, SwingAnimation.DEFAULT, true)` for swing animations
+  - `piercingAttack(piercing)` → `piercingAttack(stack.getAttackAnimation(), piercing)` for spear/pike attacks
+
+### **v1.5.3**
+- Added support for Minecraft 26.2
+- Added auto-refill functionality for main hand and off-hand
+- Added auto-disable timeout feature
+- Improved audio management with persistent mute state
+- Refactored codebase for better maintainability
